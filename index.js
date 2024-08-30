@@ -71,7 +71,6 @@ app.use((req, res, next) => {
 //Routes
 app.use("/toughts", toughtsRoutes);
 app.use("/", authRoutes);
-
 app.get("/", ToughtController.showToughts);
 
 conn
